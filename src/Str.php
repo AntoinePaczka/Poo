@@ -46,7 +46,7 @@ class Str
         return $this->string;
     }
 
-    public function camelCase(){
+    public function toCamelCase(){
                 if(preg_match('/[-,_, ]/', $this->string)) {
                         return $this
                             ->strlower()
