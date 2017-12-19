@@ -46,5 +46,23 @@ class Str
         return $this->string;
     }
 
+    public function camelCase(){
+                if(preg_match('/[-,_, ]/', $this->string)) {
+                        return $this
+                            ->strlower()
+                            ->replace('-', ' ')
+                            ->replace('_', ' ')
+                            ->ucwords()
+                            ->replace(' ', '')
+                            ->lcfirst();
+
+         } else {
+                        return $this;
+         }
+     }
+
+    public function toString(){
+                return $this->string;
+     }
 
 }

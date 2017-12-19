@@ -17,5 +17,11 @@ class StackTest extends TestCase
         $this->assertSame('myString', $string);
 
     }
+
+    public function testExo2(){
+
+               $string = Str::on('my_string')->camelCase()->toString();
+               $this->assertSame('myString', $string);
+    }
 }
 ?>
