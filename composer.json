@@ -1,0 +1,19 @@
+{
+    "name": "antoi/untitled",
+    "authors": [
+        {
+            "name": "Antoine Paczka",
+            "email": "antoine.paczka@devinci.fr"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^6.5",
+        "symfony/var-dumper": "^4.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "String\\": "src/"
+        }
+    }
+}
